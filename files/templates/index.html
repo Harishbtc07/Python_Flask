@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<style>
+		form {
+			margin: 20px auto;
+			padding: 20px;
+			border: 2px solid #3b3b3b;
+			max-width: 400px;
+			text-align: center;
+			background-color: #f7f7f7;
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #555;
+			text-align: left;
+		}
+		input[type="text"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			margin-bottom: 20px;
+			width: 100%;
+			box-sizing: border-box;
+			background-color: #f0f0f0;
+			color: #555;
+		}
+		input[type="text"]:focus {
+			border-color: #3b3b3b;
+			background-color: #fff;
+			color: #3b3b3b;
+		}
+		input[type="submit"] {
+			background-color: #3b3b3b;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
 <body>
 
-<h2>HTML Forms</h2>
+	<h2>HTML Forms</h2>
 
-<form action="/submit" method='post'>
-  <label for="Science">Science:</label><br>
-  <input type="text" id="science" name="science" value="0"><br>
-  <label for="Maths">Maths:</label><br>
-  <input type="text" id="maths" name="maths" value="0"><br><br>
-  <label for="C ">C:</label><br>
-  <input type="text" id="c" name="c" value="0"><br><br>
-  <label for="datascience">Data Science:</label><br>
-  <input type="text" id="datascience" name="datascience" value="0"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+	<form action="/submit" method='post'>
+		<label for="Science">Science:</label>
+		<input type="text" id="science" name="science" value="0">
 
+		<label for="Maths">Maths:</label>
+		<input type="text" id="maths" name="maths" value="0">
 
+		<label for="C ">C:</label>
+		<input type="text" id="c" name="c" value="0">
+
+		<label for="datascience">Data Science:</label>
+		<input type="text" id="datascience" name="datascience" value="0">
+
+		<input type="submit" value="Submit">
+	</form>
 
 </body>
 </html>

@@ -1,18 +1,50 @@
+<!DOCTYPE html>
 <html>
-
-<h2>Final Results</h2>
-
+<head>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+		}
+		h2 {
+			text-align: center;
+			color: #3b3b3b;
+			margin-top: 30px;
+		}
+		table {
+			margin: 20px auto;
+			border-collapse: collapse;
+			border: 2px solid #3b3b3b;
+			background-color: #fff;
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		}
+		th, td {
+			padding: 10px;
+			text-align: center;
+			border: 1px solid #ccc;
+		}
+		th {
+			font-weight: bold;
+			background-color: #3b3b3b;
+			color: #fff;
+		}
+		tr:nth-child(even) {
+			background-color: #f0f0f0;
+		}
+	</style>
+</head>
 <body>
-<table border=2>
- {% for key,value in result.items() %}
-    <tr>
-        {# This is the comment sections #}
-        <th>{{ key }}</th>
-        <th>{{ value }}</th>
 
-    </tr>  
-  {% endfor %}
-</table>
+	<h2>Final Results</h2>
+
+	<table border=2>
+	{% for key,value in result.items() %}
+	    <tr>
+	        <th>{{ key }}</th>
+	        <td>{{ value }}</td>
+	    </tr>  
+  	{% endfor %}
+	</table>
+
 </body>
-
 </html>
